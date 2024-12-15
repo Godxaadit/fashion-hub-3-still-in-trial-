@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FF0800;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #FFFFFF;
+            color: #FF0800;
+            padding: 20px;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FF0800;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 8, 0, 0.9));
+            color: #FFFFFF;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #FFD700;
+            color: #FF0800;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FFFFFF;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            background-color: #FFFFFF;
+            color: #FF0800;
+        }
+
+        .product-card {
+            background-color: #FFFFFF;
+            color: #FF0800;
+            border: 1px solid #FF0800;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .product-card p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .product-card button {
+            background-color: #FF0800;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #FFD700;
+            color: #FF0800;
+        }
+
+        footer {
+            background-color: #FF0800;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>Fashion Hub</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Collections</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Step into Style</h1>
+    <p>Discover the latest trends and timeless classics. Your perfect outfit awaits.</p>
+    <button class="cta-button">Shop Now</button>
+</section>
+
+<section class="products">
+    <div class="product-card">
+        <img src="https://via.placeholder.com/250" alt="Product 1">
+        <h3>Trendy T-Shirt</h3>
+        <p>Comfortable and stylish for every occasion.</p>
+        <p class="price">$19.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/250" alt="Product 2">
+        <h3>Elegant Dress</h3>
+        <p>Perfect for your next big event.</p>
+        <p class="price">$49.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/250" alt="Product 3">
+        <h3>Casual Sneakers</h3>
+        <p>Style meets comfort in every step.</p>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Fashion Hub. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
